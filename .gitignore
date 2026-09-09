@@ -1,0 +1,80 @@
+
+# Python
+
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+
+# Environment / Secrets
+
+
+.env
+.env.*
+!.env.example
+
+.streamlit/secrets.toml
+
+
+
+# IDE / Editor
+
+.vscode/
+.idea/
+
+
+# OS generated files
+
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# Temporary / Generated files
+
+*.log
+*.tmp
+*.temp
+
+
+# Uploaded / User-generated data
+
+
+uploads/
+temp/
+tmp/
+
+
+
+
+# Python build artifacts
+
+
+build/
+dist/
+*.egg-info/
+
+
+# Testing / Coverage
+
+
+.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+
+
+# Miscellaneous
+
+
+*.bak
+*.swp
+*.swo
