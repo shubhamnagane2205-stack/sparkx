@@ -39,8 +39,9 @@ def sample_frames(video_bytes: bytes,n_frames: int,extension: str) -> list:
             if success:
                 frames.append(frame)
     finally:
-        if tmp_path and os.path.exists(tmp_path):
-            os.remove(tmp_path)
         if cap is not None:
             cap.release()
+        if tmp_path and os.path.exists(tmp_path):
+            os.remove(tmp_path)
+        
         return frames

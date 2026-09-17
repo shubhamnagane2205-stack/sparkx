@@ -1,6 +1,6 @@
 #Centralized constants.
 
-MODEL_PATH = "models/SparkLite.tflite"
+MODEL_PATH = "model/SparkLite.tflite"
 IMAGE_SIZE = (448, 448)
 
 #The model's output indices map to list's indices
@@ -17,9 +17,13 @@ CLASS_NAMES = [
     "stainless_steel",
 ]
 
-FRAMES_PER_VIDEO = 10  # frames sampled per video for soft-voting
+FRAMES_PER_VIDEO = 30  # frames sampled per video for soft-voting
  
 MAX_UPLOAD_SIZE_MB = 50
  
 ALLOWED_IMAGE_EXTENSIONS = {"jpg", "jpeg", "png"}
 ALLOWED_VIDEO_EXTENSIONS = {"mp4", "mov", "avi"}
+
+APP_NAME = "SparkX"
+LOGO_PATH = "UI/SparkX.png"
+BACKGROUND_IMAGE_PATH='UI/Hero_Sec.png'

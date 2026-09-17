@@ -10,7 +10,7 @@ from config import (
 )
 
 
-def _get_extension(file_name:str) -> str:
+def get_extension(file_name:str) -> str:
     return file_name.rsplit('.',1)[-1].lower() if '.' in file_name else ''
 
 def _is_valid_image_content(uploaded_file) ->bool:
@@ -31,7 +31,7 @@ def _is_valid_video_content(uploaded_file) ->bool:
 
     try:
         uploaded_file.seek(0)
-        extension=_get_extension(uploaded_file.name)
+        extension=get_extension(uploaded_file.name)
         with tempfile.NamedTemporaryFile(delete=False,suffix='.'+extension) as tmp_file:
             tmp_file.write(uploaded_file.read())
             tmp_path=tmp_file.name
@@ -64,7 +64,7 @@ def validate_upload(uploaded_file):
             f"File is too large ({size_mb:.1f} MB). "
             f"Maximum allowed size is {MAX_UPLOAD_SIZE_MB} MB."
         )
-    extension=_get_extension(uploaded_file.name)
+    extension=get_extension(uploaded_file.name)
     if extension in ALLOWED_IMAGE_EXTENSIONS:
         if _is_valid_image_content(uploaded_file):
             return True,'image',None
