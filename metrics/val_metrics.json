@@ -1,0 +1,149 @@
+{
+  "accuracy": 0.7919,
+  "class_names": [
+    "alloy_structural_steel",
+    "alloy_tool_steel",
+    "carbon_tool_steel",
+    "cast_iron",
+    "high_carbon_steel",
+    "high_speed_steel",
+    "low_carbon_steel",
+    "medium_carbon_steel",
+    "pure_iron",
+    "stainless_steel"
+  ],
+  "confusion_matrix": [
+    [
+      56,
+      0,
+      0,
+      0,
+      17,
+      0,
+      1,
+      10,
+      1,
+      0
+    ],
+    [
+      0,
+      71,
+      0,
+      0,
+      0,
+      3,
+      3,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      13,
+      27,
+      3,
+      0,
+      0,
+      4,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      37,
+      0,
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      44,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      39,
+      0,
+      0,
+      0
+    ],
+    [
+      12,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      31,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      32
+    ]
+  ],
+  "per_class_recall": {
+    "alloy_structural_steel": 0.659,
+    "alloy_tool_steel": 0.888,
+    "carbon_tool_steel": 0.562,
+    "cast_iron": 1,
+    "high_carbon_steel": 0.822,
+    "high_speed_steel": 0.978,
+    "low_carbon_steel": 0.975,
+    "medium_carbon_steel": 0.689,
+    "pure_iron": 1,
+    "stainless_steel": 0.762
+  }
+}

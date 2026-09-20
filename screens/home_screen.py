@@ -25,7 +25,7 @@ def home_screen():
 
 
     render_header(subtitle='AI-powered ferrous material identification',
-        logo_path=LOGO_PATH,prime_button_name='Guide',sec_button_name="Metrics",state_pb='guide',state_sb='metric')
+        logo_path=LOGO_PATH,prime_button_name='Guide',sec_button_name="Methodology",state_pb='guide',state_sb='methodology')
 
     hero_section(path_of_background_image=BACKGROUND_IMAGE_PATH)
     
@@ -95,16 +95,14 @@ def home_screen():
                 
                 if st.button("Analyze Spark Pattern", width='stretch',type='primary'):
                     
-        
                     try:
                         with st.spinner("Analyzing spark pattern..."):
                             predicted_class, confidence, all_probs = run_inference(
                                 uploaded_file, file_kind
                             )
                     except Exception as e:
-                        st.error(str(e)
-                    
-                )   
+                        st.error("Unable to analyze the uploaded file. "
+                                "Please try another spark-test image or video.")   
                     else:
                         st.session_state["result"] = {
                             "predicted_class": predicted_class,

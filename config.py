@@ -17,9 +17,9 @@ CLASS_NAMES = [
     "stainless_steel",
 ]
 
-FRAMES_PER_VIDEO = 30  # frames sampled per video for soft-voting
+FRAMES_PER_VIDEO = 10  # frames sampled per video for soft-voting
  
-MAX_UPLOAD_SIZE_MB = 50
+MAX_UPLOAD_SIZE_MB = 200
  
 ALLOWED_IMAGE_EXTENSIONS = {"jpg", "jpeg", "png"}
 ALLOWED_VIDEO_EXTENSIONS = {"mp4", "mov", "avi"}
@@ -27,3 +27,9 @@ ALLOWED_VIDEO_EXTENSIONS = {"mp4", "mov", "avi"}
 APP_NAME = "SparkX"
 LOGO_PATH = "UI/SparkX.png"
 BACKGROUND_IMAGE_PATH='UI/Hero_Sec.png'
+
+GUIDE_CORRECT_ORIENTATION_IMAGE = "UI/guide_orientation_correct.png"
+GUIDE_INCORRECT_ORIENTATION_IMAGE = "UI/guide_orientation_incorrect.png"
+
+
+METRICS_PATH = "metrics/val_metrics.json"

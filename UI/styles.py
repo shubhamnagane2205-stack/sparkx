@@ -290,6 +290,262 @@ video[data-testid="stVideo"] {
     object-fit: contain !important;
     display: block !important;
 }
+
+/* ==============================================================
+   Guide & Methodology pages -- shared building blocks
+   ============================================================== */
+
+/* ---- Step / tip cards (Guide page) ---- */
+.sparkx-card-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.sparkx-step-card, .sparkx-tip-card {
+    background-color: #1C1C1F;
+    border: 1px solid rgba(163, 163, 163, 0.25);
+    border-radius: 10px;
+    padding: 1.25rem 1.1rem;
+}
+
+.sparkx-step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #FF9F1C;
+    color: #0E0E10;
+    font-weight: 800;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.6rem;
+}
+
+.sparkx-tip-icon {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem;
+}
+
+.sparkx-card-title {
+    color: #F5F5F0;
+    font-size: 1rem !important;
+    font-weight: 700;
+    margin: 0 0 0.3rem 0;
+}
+
+.sparkx-card-desc {
+    color: #A3A3A3;
+    font-size: 0.88rem !important;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+
+.sparkx-orientation-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+    .sparkx-orientation-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sparkx-orientation-example {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid;
+}
+
+.sparkx-orientation-example.correct { border-color: #6BCB77; }
+.sparkx-orientation-example.incorrect { border-color: #FF6B6B; }
+
+.sparkx-orientation-example img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.sparkx-orientation-placeholder {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E0E10;
+    color: #A3A3A3;
+    font-size: 0.85rem !important;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.sparkx-orientation-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 0.8rem;
+    font-weight: 700;
+    font-size: 0.9rem !important;
+}
+
+.sparkx-orientation-example.correct .sparkx-orientation-label { color: #6BCB77; }
+.sparkx-orientation-example.incorrect .sparkx-orientation-label { color: #FF6B6B; }
+
+.sparkx-orientation-caption {
+    color: #A3A3A3;
+    font-size: 0.85rem !important;
+    padding: 0 0.8rem 0.8rem 0.8rem;
+    margin: 0;
+}
+
+/* ---- Process timeline nav (Methodology page) ---- */
+.sparkx-timeline-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.sparkx-timeline-pill {
+    background-color: #1C1C1F;
+    border: 1px solid rgba(163, 163, 163, 0.3);
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    color: #A3A3A3;
+    font-size: 0.82rem !important;
+    text-decoration: none;
+    transition: border-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.sparkx-timeline-pill:hover {
+    border-color: #FF9F1C;
+    color: #F5F5F0;
+}
+
+/* ---- Process section (Methodology page) ---- */
+.sparkx-process-section {
+    border-left: 3px solid #FF9F1C;
+    padding-left: 1.25rem;
+    margin: 0.5rem 0 0.75rem 0;
+    scroll-margin-top: 20px;
+}
+
+.sparkx-process-number {
+    color: #FF9F1C;
+    font-size: 0.8rem !important;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.2rem 0;
+}
+
+.sparkx-process-title {
+    color: #F5F5F0;
+    font-size: 1.25rem !important;
+    font-weight: 750;
+    margin: 0 0 0.4rem 0;
+}
+
+.sparkx-process-summary {
+    color: #A3A3A3;
+    font-size: 0.95rem !important;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ---- Metric bars (reuses confidence-bar-* visual language) ---- */
+.sparkx-metric-row {
+    margin-bottom: 0.9rem;
+}
+
+.sparkx-metric-label-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem !important;
+    color: #A3A3A3;
+    margin-bottom: 0.3rem;
+}
+
+.sparkx-metric-label-row .value {
+    color: #F5F5F0;
+    font-weight: 700;
+}
+
+/* ---- Confusion matrix table ---- */
+.sparkx-confusion-wrap {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.sparkx-confusion-table {
+    border-collapse: collapse;
+    font-size: 0.78rem !important;
+    min-width: 700px;
+}
+
+.sparkx-confusion-table th, .sparkx-confusion-table td {
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+    border: 1px solid rgba(163, 163, 163, 0.15);
+    color: #F5F5F0;
+}
+
+.sparkx-confusion-table th {
+    color: #A3A3A3;
+    font-weight: 600;
+    font-size: 0.72rem !important;
+    white-space: nowrap;
+}
+
+.sparkx-confusion-table .row-label {
+    color: #A3A3A3;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+/* ---- Tech stack chips ---- */
+.sparkx-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1rem 0;
+}
+
+.sparkx-chip {
+    background-color: #1C1C1F;
+    border: 1px solid rgba(163, 163, 163, 0.3);
+    border-radius: 999px;
+    padding: 0.45rem 1rem;
+    color: #F5F5F0;
+    font-size: 0.85rem !important;
+    font-weight: 600;
+}
+
+/* ---- Simple page heading (Guide / Methodology) ---- */
+.sparkx-page-heading {
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.sparkx-page-heading h1 {
+    color: #F5F5F0;
+    font-size: 1.8rem !important;
+    font-weight: 800;
+    margin: 0;
+}
+
+.sparkx-page-heading p {
+    color: #A3A3A3;
+    font-size: 0.95rem !important;
+    margin: 0.3rem 0 0 0;
+}
 </style>
 """
 
@@ -939,7 +1195,7 @@ def apply_layout():
                Hide Streamlit default UI
                ========================================= */
 
-            /*#MainMenu,
+            #MainMenu,
             footer,
             [data-testid="stHeader"] {
                 display: none;
@@ -947,7 +1203,7 @@ def apply_layout():
 
             .block-container {
                 padding-top: 0 !important;
-            }*/
+            }
 
 
             /* =========================================
@@ -1046,3 +1302,148 @@ def render_result_placeholder():
 
     </div>
     """
+
+
+def render_page_heading(title: str, subtitle: str) -> str:
+    """Simple page title block, used by the Guide and Methodology pages."""
+    return f"""
+    <div class="sparkx-page-heading">
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+    </div>
+    """
+ 
+ 
+def render_card_row(cards: list) -> str:
+    """
+    Renders a responsive row of step/tip cards.
+    
+    """
+    card_html = []
+    for c in cards:
+        badge = c.get("badge", "")
+        is_number = badge.isdigit()
+        badge_html = (
+            f'<div class="sparkx-step-number">{badge}</div>'
+            if is_number
+            else f'<div class="sparkx-tip-icon">{badge}</div>'
+        )
+        card_html.append(f"""
+        <div class="sparkx-step-card">
+            {badge_html}
+            <p class="sparkx-card-title">{c['title']}</p>
+            <p class="sparkx-card-desc">{c['desc']}</p>
+        </div>
+        """)
+    return f'<div class="sparkx-card-row">{"".join(card_html)}</div>'
+ 
+ 
+def _orientation_example_html(image_path: str, label: str, caption: str, kind: str) -> str:
+    """
+    kind: "correct" or "incorrect".
+    """
+    icon = "\u2713" if kind == "correct" else "\u2717"
+    with open(image_path, "rb") as f:
+        b64 = base64.b64encode(f.read()).decode("utf-8")
+    media_html = f'<img src="data:image/png;base64,{b64}" alt="{label}">'
+    
+    return f"""
+    <div class="sparkx-orientation-example {kind}">
+        {media_html}
+        <div class="sparkx-orientation-label">{icon} {label}</div>
+        <p class="sparkx-orientation-caption">{caption}</p>
+    </div>
+    """
+ 
+ 
+def render_orientation_comparison(correct_path: str, incorrect_path: str) -> str:
+    """Side-by-side correct/incorrect capture orientation examples."""
+    correct_html = _orientation_example_html(
+        correct_path, "Correct", "Sparks flow left, matching the training setup.", "correct"
+    )
+    incorrect_html = _orientation_example_html(
+        incorrect_path, "Incorrect", "Rotated or flipped -- may reduce accuracy.", "incorrect"
+    )
+    return f'<div class="sparkx-orientation-row">{correct_html}{incorrect_html}</div>'
+ 
+ 
+def render_timeline_nav(sections: list) -> str:
+    """sections: list of (anchor_id, label) tuples -> horizontal pill nav."""
+    pills = "".join(
+        f'<a class="sparkx-timeline-pill" href="#{anchor_id}">{label}</a>'
+        for anchor_id, label in sections
+    )
+    return f'<div class="sparkx-timeline-nav">{pills}</div>'
+ 
+ 
+def render_process_header(anchor_id: str, number: str, title: str, summary: str) -> str:
+    """
+    Always-visible header for one Methodology timeline section (number
+    badge, title, one-line summary). The detailed explanation is
+    rendered separately inside a native st.expander in the screen file,
+    since HTML strings can't contain real interactive Streamlit widgets.
+    """
+    return f"""
+    <div class="sparkx-process-section" id="{anchor_id}">
+        <p class="sparkx-process-number">{number}</p>
+        <p class="sparkx-process-title">{title}</p>
+        <p class="sparkx-process-summary">{summary}</p>
+    </div>
+    """
+ 
+ 
+def render_recall_bars(per_class_recall: dict) -> str:
+    """Per-class recall as horizontal bars, reusing the confidence-bar visual language."""
+    rows = []
+    for class_name, recall in per_class_recall.items():
+        pct = round(recall * 100, 1)
+        display_name = class_name.replace("_", " ")
+        rows.append(f"""
+        <div class="sparkx-metric-row">
+            <div class="sparkx-metric-label-row">
+                <span>{display_name}</span>
+                <span class="value">{pct}%</span>
+            </div>
+            <div class="confidence-bar-track">
+                <div class="confidence-bar-fill" style="width: {pct}%;"></div>
+            </div>
+        </div>
+        """)
+    return "".join(rows)
+ 
+ 
+def render_confusion_matrix_table(matrix: list, class_names: list) -> str:
+    """
+    Renders the confusion matrix as an HTML table with CSS-only heatmap
+    shading (cell background intensity scaled to value, amber tint) --
+    no charting library dependency needed.
+    """
+    max_val = max(max(row) for row in matrix) or 1
+    short_names = [n.replace("_", " ") for n in class_names]
+ 
+    header = "<th></th>" + "".join(f"<th>{n}</th>" for n in short_names)
+    body_rows = []
+    for i, row in enumerate(matrix):
+        cells = []
+        for val in row:
+            intensity = val / max_val
+            bg = f"rgba(255, 159, 28, {0.08 + intensity * 0.55:.3f})"
+            cells.append(f'<td style="background-color:{bg};">{val}</td>')
+        body_rows.append(
+            f'<tr><td class="row-label">{short_names[i]}</td>{"".join(cells)}</tr>'
+        )
+ 
+    return f"""
+    <div class="sparkx-confusion-wrap">
+        <table class="sparkx-confusion-table">
+            <tr>{header}</tr>
+            {"".join(body_rows)}
+        </table>
+    </div>
+    """
+ 
+ 
+def render_tech_chips(items: list) -> str:
+    chips = "".join(f'<span class="sparkx-chip">{item}</span>' for item in items)
+    return f'<div class="sparkx-chip-row">{chips}</div>'
+ 

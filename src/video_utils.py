@@ -44,4 +44,4 @@ def sample_frames(video_bytes: bytes,n_frames: int,extension: str) -> list:
         if tmp_path and os.path.exists(tmp_path):
             os.remove(tmp_path)
         
-        return frames
+    return frames
