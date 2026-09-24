@@ -188,7 +188,8 @@ def methodology_screen():
             "manufacturing large volumes of near-identical augmented "
             "copies from a single thin source clip would have taught the "
             "model to recognize its own augmentation artifacts rather "
-            "than genuine material variation. Class-weighted loss was "
+            "than genuine material variation.\n\n" 
+            "This resulted in 2,366 training images, including augmented samples, while the validation set contained 447 images with no augmentation applied. Class-weighted loss was "
             "layered on top during training as a second, complementary "
             "safeguard against the imbalance that remained."
         )
