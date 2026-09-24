@@ -1255,7 +1255,7 @@ def render_footer():
     st.markdown(
         f"""
         <div class="app-footer">
-            <p class="footer-copyright">&copy; {year} Shubham Nagane. All rights reserved.</p>
+            <p class="footer-copyright">&copy; {year} Shubham Nagane.</p>
             <p class="footer-stack">Built with Streamlit &middot; TensorFlow Lite &middot; MobileNetV2</p>
         </div>
         """,
