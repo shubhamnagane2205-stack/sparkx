@@ -30,7 +30,7 @@ SparkX automates that read. Upload a photo or short video of a spark test, and i
 **Methodology page:**
 ![Methodology screen](docs/screenshots/methodology.png)
 
-**Live demo:** Coming soon
+**Live demo:** sparkx.streamlit.app
 
 ## Tech Stack
 
@@ -59,7 +59,7 @@ Some classes perform much better than others — materials with a very distinct 
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/sparkx.git
+git clone https://github.com/shubham2205-stack/sparkx.git
 cd sparkx
 ```
 
