@@ -51,7 +51,7 @@ Want the full story — how the data was collected, why these classes were chose
 
 ## Model Performance
 
-The model reaches 79.2% accuracy on a held-out validation set of 466 images across all 10 classes.
+The model reaches 79.2% accuracy on a held-out validation set of 447 images across all 10 classes.
 
 Some classes perform much better than others — materials with a very distinct spark pattern (like cast iron and pure iron) are identified almost perfectly, while a few visually similar classes are harder to tell apart. The full confusion matrix and per-class breakdown are available on the in-app **Methodology** page.
 
